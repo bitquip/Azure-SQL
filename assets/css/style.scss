@@ -32,3 +32,94 @@ section {
   border-radius: 0 0 8px 8px;
   position: relative;
 }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.toggle-container {
+    position: relative;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-label {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 24px;
+    background-color: var(--toggle-bg);
+    border-radius: 12px;
+    position: relative;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-inner {
+    width: 20px;
+    height: 20px;
+    background-color: var(--toggle-inner-bg);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease;
+}
+
+.toggle-switch {
+    width: 20px;
+    height: 20px;
+    background-color: var(--toggle-switch-bg);
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 28px;
+    transition: transform 0.3s ease;
+}
+
+#toggle:checked + .toggle-label .toggle-inner {
+    transform: translateX(26px);
+}
+
+#toggle:checked + .toggle-label .toggle-switch {
+    transform: translateX(-26px);
+}
+
+:root {
+    --bg-color-light: #f0f0f0;
+    --bg-color-dark: #1a1a1a;
+    --text-color-light: #333;
+    --text-color-dark: #ddd;
+    --toggle-bg-light: #ccc;
+    --toggle-bg-dark: #444;
+    --toggle-inner-bg-light: #fff;
+    --toggle-inner-bg-dark: #000;
+    --toggle-switch-bg-light: #888;
+    --toggle-switch-bg-dark: #666;
+}
+
+#toggle:checked ~ body {
+    --bg-color: var(--bg-color-dark);
+    --text-color: var(--text-color-light);
+}
+
+#toggle:checked ~ .toggle-container .toggle-label {
+    background-color: var(--toggle-bg-dark);
+}
+
+#toggle:checked ~ .toggle-container .toggle-inner {
+    background-color: var(--toggle-inner-bg-dark);
+}
+
+#toggle:checked ~ .toggle-container .toggle-switch {
+    background-color: var(--toggle-switch-bg-dark);
+}
