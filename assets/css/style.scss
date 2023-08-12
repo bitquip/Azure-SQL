@@ -94,18 +94,6 @@ section {
     transform: translateX(-26px);
 }
 
-:root {
-    --bg-color-light: #f0f0f0;
-    --bg-color-dark: #1a1a1a;
-    --text-color-light: #333;
-    --text-color-dark: #ddd;
-    --toggle-bg-light: #ccc;
-    --toggle-bg-dark: #444;
-    --toggle-inner-bg-light: #fff;
-    --toggle-inner-bg-dark: #000;
-    --toggle-switch-bg-light: #888;
-    --toggle-switch-bg-dark: #666;
-}
 
 #toggle:checked ~ body {
     --bg-color: var(--bg-color-dark);
