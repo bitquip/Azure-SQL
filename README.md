@@ -1,5 +1,3 @@
-# Azure-SQL
-
 <div class="toggle-container">
     <input type="checkbox" id="toggle" class="toggle-checkbox">
     <label for="toggle" class="toggle-label">
