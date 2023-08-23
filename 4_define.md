@@ -1,5 +1,17 @@
 ## Section 3: Define Azure SQL Database Resources
 
+
+# Table of Contents
+
+- [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction.md)
+- [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites.md)
+- [Setup](https://bitquip.github.io/Azure-SQL/3_setup.md)
+- [Define](https://bitquip.github.io/Azure-SQL/4_define.md)
+- [Deploy](https://bitquip.github.io/Azure-SQL/5_deploy.md)
+- [Cleanup](https://bitquip.github.io/Azure-SQL/6_cleanup.md)
+- [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion.md)
+
+
 In this section, we'll define the resources needed to create an Azure SQL Database and its dependencies using Pulumi and TypeScript.
 
 1. **Import Necessary Modules:** Open the `index.ts` file in the `azure-ts` directory. At the top of the file, you'll need to import the required Pulumi and Azure modules:
@@ -42,3 +54,8 @@ const sqlDatabase = new azure.sql.Database("sqldatabase", {
 ```
 
 Here, you're creating an Azure SQL Database named "sqldatabase" on the SQL Server you've just created. The `requestedServiceObjectiveName` represents the performance level of the database.
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="https://bitquip.github.io/Azure-SQL/3_setup.md" style="margin: 10px; text-decoration: none;">← Previous</a>
+    <a href="https://bitquip.github.io/Azure-SQL/5_deploy.md" style="margin: 10px; text-decoration: none;">Next →</a>
+</div>
