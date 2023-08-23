@@ -3,13 +3,13 @@
 
 # Table of Contents
 
-- [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction.md)
-- [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites.md)
-- [Setup](https://bitquip.github.io/Azure-SQL/3_setup.md)
-- [Define](https://bitquip.github.io/Azure-SQL/4_define.md)
-- [Deploy](https://bitquip.github.io/Azure-SQL/5_deploy.md)
-- [Cleanup](https://bitquip.github.io/Azure-SQL/6_cleanup.md)
-- [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion.md)
+- [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
+- [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
+- [Setup](https://bitquip.github.io/Azure-SQL/3_setup)
+- [Define](https://bitquip.github.io/Azure-SQL/4_define)
+- [Deploy](https://bitquip.github.io/Azure-SQL/5_deploy)
+- [Cleanup](https://bitquip.github.io/Azure-SQL/6_cleanup)
+- [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion)
 
 
 In this section, we'll define the resources needed to create an Azure SQL Database and its dependencies using Pulumi and TypeScript.
@@ -56,6 +56,6 @@ const sqlDatabase = new azure.sql.Database("sqldatabase", {
 Here, you're creating an Azure SQL Database named "sqldatabase" on the SQL Server you've just created. The `requestedServiceObjectiveName` represents the performance level of the database.
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="https://bitquip.github.io/Azure-SQL/3_setup.md" style="margin: 10px; text-decoration: none;">← Previous</a>
-    <a href="https://bitquip.github.io/Azure-SQL/5_deploy.md" style="margin: 10px; text-decoration: none;">Next →</a>
+    <a href="https://bitquip.github.io/Azure-SQL/3_setup" style="margin: 10px; text-decoration: none;">← Previous</a>
+    <a href="https://bitquip.github.io/Azure-SQL/5_deploy" style="margin: 10px; text-decoration: none;">Next →</a>
 </div>
