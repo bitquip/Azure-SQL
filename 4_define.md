@@ -75,8 +75,6 @@ const infraConfigs = {
 While the `tags` object is used to reference necessary values common to all resources, the `infraConfigs` object is used to reference values specific to the infrastructure configurations.
 
 
-Apologies for the confusion earlier. Here's the information you provided in a markdown table format:
-
 | Field         | Description                                                      |
 |---------------|------------------------------------------------------------------|
 | subscriptionId| The ID of the Azure subscription in which the resource is being created. This is typically a GUID. |
