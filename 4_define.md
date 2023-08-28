@@ -83,6 +83,29 @@ While the `tags` object is used to reference necessary values common to all reso
 | region        | The Azure region in which the resource is being created. This is typically a string. |
 
 
+***Role Configuration***
+
+```typescript
+interface RoleConfigs {
+    devRoleGroupId: vznpulumi.pulumi.Input<string>;
+    devRoleGroupName: string;
+    t1RoleGroupId: vznpulumi.pulumi.Input<string>;
+    t1RoleGroupName: string;
+    apiDbRoles: Array<string>;
+}
+```
+
+The `RoleConfigs` interface is used to define the role configurations. These configurations are used to manage access to the resources within the resource group.
+
+| Field              | Description                                                                                             | 
+|--------------------|---------------------------------------------------------------------------------------------------------|
+| devRoleGroupId     | The ID of the Azure Active Directory group that will be used to manage the resource group. This is typically a GUID. |
+| devRoleGroupName   | The name of the Azure Active Directory group that will be used to manage the resource group. This is typically a string. |
+| t1RoleGroupId      | The ID of the Azure Active Directory group that will be used to manage the resource group. This is typically a GUID. |
+| t1RoleGroupName    | The name of the Azure Active Directory group that will be used to manage the resource group. This is typically a string. |
+| apiDbRoles         | The roles that will be assigned to the Azure Active Directory group that will be used to manage the resource group. This is typically an array of strings. |
+
+
 3. **Define a Resource Group:**
 
     Start by defining a resource group to hold your Azure resources:
