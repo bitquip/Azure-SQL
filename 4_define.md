@@ -46,7 +46,22 @@ const tags = {
 };
 ```
 
-- Infrastructure Configuration
+| Tag          | Description                                      |
+|--------------|--------------------------------------------------|
+| env          | The environment in which the resource is being created. This is typically one of the following values: sandbox, dev, qa, prod. |
+| app          | The name of the application the resource is being created for. This is typically a string. |
+| servicetier  | The service tier of the resource. This is typically one of the following values: t1, t2, t3, t4. |
+| owneremail   | The email address of the resource owner. This is typically a string. |
+
+
+
+Tags provide a way to associate metadata with Azure resources, such as virtual machines, storage accounts, databases, and more. 
+
+These tags consist of name-value pairs and are particularly useful for organizing, categorizing, and managing resources within an Azure environment/subscription.
+
+When creating resources at Vizient, we use a standard set of tags to help us organize and manage our resources. These tags are defined in the `tags` object above.
+
+***Infrastructure Configuration***
 
 ```typescript
 const infraConfigs = {
@@ -57,9 +72,18 @@ const infraConfigs = {
 };
 ```
 
-The `tags` object is used to reference necessary values common to all resources. 
+While the `tags` object is used to reference necessary values common to all resources, the `infraConfigs` object is used to reference values specific to the infrastructure configurations.
 
-The `infraConfigs` object is used to reference values specific to the infrastructure configurations.
+
+Apologies for the confusion earlier. Here's the information you provided in a markdown table format:
+
+| Field         | Description                                                      |
+|---------------|------------------------------------------------------------------|
+| subscriptionId| The ID of the Azure subscription in which the resource is being created. This is typically a GUID. |
+| aseId         | The ID of the Azure App Service Environment in which the resource is being created. This is typically a GUID. |
+| instance      | The instance of the resource being created. This is typically a number. |
+| region        | The Azure region in which the resource is being created. This is typically a string. |
+
 
 3. **Define a Resource Group:**
 
@@ -82,6 +106,17 @@ new ResourceGroupVzn(`rg-eastus2-01`, {
 
 The `ResourceGroup` resource represents a logical container for your resources within Azure. It helps you manage your resources as a group and apply policies to them as a group.
 
+In this code, we are creating a resource group named `rg-eastus2-01` in the `eastus2` region. We are also associating the resource group with the `azure-sql` application, the `sandbox` environment, and the `t1` service tier.
+
+The `ResourceGroup` resource also allows you to apply policies to the resources within the group. In this code, we are associating the resource group with the `t1` role group. This role group is used to manage access to the resources within the resource group.
+
+| Field              | Description                                                                                             |
+|--------------------|---------------------------------------------------------------------------------------------------------|
+| owner              | The owner of the resource group. This is typically a user object. The `getUser` method is used to retrieve the user object from Azure Active Directory. |
+| devAADGroupName    | The name of the Azure Active Directory group that will be used to manage the resource group. This is typically a string. |
+
+
+***NOTE:***
 Typically you would define related resources within their own file and reference them in the main index.ts file. However, for the sake of simplicity, we'll define all of our resources directly in the index.ts file.
 
 This will allow us to focus on the specific resource we're creating.
@@ -116,7 +151,21 @@ const sqlServer = new sql.ServerVzn(
 );
 ```
 
-In this code, ...
+In this code, we are creating an Azure SQL Server named `sqlServer` in the `eastus2` region. We are also associating the SQL Server with the `azure-sql` application, the `sandbox` environment, and the `t1` service tier.
+
+The `Server` resource allows you to define the following properties:
+
+| Field                  | Description                                                                                             |
+|------------------------|---------------------------------------------------------------------------------------------------------|
+| appInfo                | The application information associated with the SQL Server. This is typically an object containing the application name, environment, service tier, and tags. |
+| resourceName           | The name of the SQL Server. This is typically a string. The `VizNaming.SqlServer` method is used to generate the name of the SQL Server. |
+| allowAllAzureTraffic   | A boolean value indicating whether or not to allow all Azure traffic to the SQL Server. This is typically a boolean value. |
+| allowedVizientLocations| An array of Azure locations that are allowed to access the SQL Server. This is typically an array of strings. |
+| allowedSubnetIDs       | An array of Azure subnet IDs that are allowed to access the SQL Server. This is typically an array of strings. |
+| subscriptionId         | The ID of the Azure subscription in which the SQL Server is being created. This is typically a GUID. |
+| tenantId               | The ID of the Azure Active Directory tenant in which the SQL Server is being created. This is typically a GUID. |
+
+
 
 4. **Create an Azure SQL Database:** Next, define an Azure SQL Database within the SQL Server:
 
@@ -143,10 +192,21 @@ In this code, ...
     dependsOn: sqlServer.sqlServer,
   }
 );
-
 ```
 
-Here, you're creating an Azure SQL Database named "sqldatabase" on the SQL Server you've just created. 
+In this code, we are creating an Azure SQL Database named `sqlDatabase` in the `eastus2` region. We are also associating the SQL Database with the `azure-sql` application, the `sandbox` environment, and the `t1` service tier.
+
+The `Database` resource allows you to define the following properties:  
+
+| Field                      | Description                                                                                             |
+|----------------------------|---------------------------------------------------------------------------------------------------------|
+| createAADGroupsInSandbox   | A boolean value indicating whether or not to create Azure Active Directory groups in the sandbox environment. This is typically a boolean value. |
+| resourceName               | The name of the SQL Database. This is typically a string. |
+| server                     | The SQL Server in which the SQL Database is being created. This is typically a SQL Server object. Notice that we are using the `sqlServer` object created above. |
+| databaseSku                | The SKU of the SQL Database. This is typically an object containing the name of the SKU. The `daasDbDTU` variable is used to define the name of the SKU. |
+| maxSizeInGiB               | The maximum size of the SQL Database in gigabytes. This is typically a number. |
+| appInfo                    | The application information associated with the SQL Database. This is typically an object containing the application name, environment, service tier, and tags. |
+
 
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
