@@ -11,6 +11,7 @@
 <div class="toggle-container">
     <input type="checkbox" id="toggle" class="toggle-checkbox">
     <label for="toggle" class="toggle-label">
+        Dark
         <div class="toggle-inner"></div>
         <div class="toggle-switch"></div>
     </label>
