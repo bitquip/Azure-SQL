@@ -120,9 +120,9 @@ Typically you would define related resources within their own file and reference
 
 This will allow us to focus on the specific resource we're creating.
 
-3. **Define an Azure SQL Server:**
+4. **Define an Azure SQL Server:**
     
-    Now, let's define an Azure SQL Server:
+  Now, let's define an Azure SQL Server:
 
 ```typescript
 const sqlServer = new sql.ServerVzn(
@@ -150,7 +150,9 @@ const sqlServer = new sql.ServerVzn(
 );
 ```
 
-In this code, we are creating an Azure SQL Server named `sqlServer` in the `eastus2` region. We are also associating the SQL Server with the `azure-sql` application, the `sandbox` environment, and the `t1` service tier.
+In this code, we are creating an Azure SQL Server named `sqlServer` in the `eastus2` region. 
+
+We are also associating the SQL Server with the `azure-sql` application, the `sandbox` environment, and the `t1` service tier.
 
 The `Server` resource allows you to define the following properties:
 
@@ -166,7 +168,9 @@ The `Server` resource allows you to define the following properties:
 
 
 
-4. **Create an Azure SQL Database:** Next, define an Azure SQL Database within the SQL Server:
+5. **Create an Azure SQL Database:** 
+
+Next, define an Azure SQL Database within the SQL Server:
 
 ```typescript
  new sql.DatabaseVzn(

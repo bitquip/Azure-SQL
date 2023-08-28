@@ -1,6 +1,6 @@
 # Azure SQL Database with Pulumi
 
-# Table of Contents
+### Table of Contents
 
 - [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
 - [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
@@ -52,10 +52,6 @@ For this tutorial, we will start fresh and add the necessary resources to create
 We will go through these prerequisite resources somewhat quickly, in order to focus on the Azure SQL Database. (???)
 
 In order to avoid potential conflicts with existing resources being used in live environments among other considerations, we will be creating resources in Vizient's learning environment (ALS - Azure Learning Subscription).
-
-## Prerequisite Resources
-
-
 
 
 <div style="display: flex; justify-content: space-between; align-items: center;">

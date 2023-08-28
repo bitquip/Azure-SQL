@@ -59,9 +59,13 @@ With the resources defined, it's time to deploy them:
 
     Pulumi will analyze your code, create a deployment plan, and prompt you to confirm the changes before proceeding.
 
-3. **Review and Confirm:** After reviewing the proposed changes, type `yes` to confirm and initiate the deployment.
+3. **Review and Confirm:**
 
-4. **Observe Outputs:** Once the deployment is complete, Pulumi will display outputs, including connection strings for the SQL Server and Database. These outputs are crucial for connecting to your newly created resources.
+After reviewing the proposed changes, type `yes` to confirm and initiate the deployment.
+
+4. **Observe Outputs:**
+
+Once the deployment is complete, Pulumi will display outputs, including connection strings for the SQL Server and Database. These outputs are crucial for connecting to your newly created resources.
 
 <div style="display: flex; justify-content: space-between; align-items: center;">
     <a href="https://bitquip.github.io/Azure-SQL/4_define" style="margin: 10px; text-decoration: none;">← Previous</a>
