@@ -115,6 +115,7 @@ The `ResourceGroup` resource also allows you to apply policies to the resources 
 
 
 ***NOTE:***
+
 Typically you would define related resources within their own file and reference them in the main index.ts file. However, for the sake of simplicity, we'll define all of our resources directly in the index.ts file.
 
 This will allow us to focus on the specific resource we're creating.
