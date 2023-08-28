@@ -35,7 +35,7 @@ import {Naming as VizNaming, sql} from '@vizientinc/pulumi-azure-native';
 Next, we'll define some resources to hold configuration values.
 These configuration values are common to all resources and will be referenced throughout the project.
 
-- Resource Tags
+***Resource Tags***
 
 ```typescript
 const tags = {
