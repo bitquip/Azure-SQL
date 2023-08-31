@@ -16,6 +16,8 @@
 
 <br>
 
+![Lord Nibbler](https://static.wikia.nocookie.net/simpsons/images/f/f5/250px-Nibbler.png/revision/latest/thumbnail/width/360/height/360?cb=20210506175741)
+
 ## Introduction
 
 **This tutorial will walk you through the process of creating an Azure SQL Database using Pulumi.**
