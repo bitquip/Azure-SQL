@@ -1,7 +1,6 @@
 ## Section 1: Prerequisites
 
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -15,6 +14,8 @@
 - [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion)
 
 </details>
+
+<br>
 
 
 **Before you start, there are a few things you need to have in place:**

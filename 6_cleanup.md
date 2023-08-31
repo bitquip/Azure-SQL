@@ -2,7 +2,6 @@
 ## Section 5: Clean Up Resources
 
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -17,6 +16,7 @@
 
 </details>
 
+<br>
 
 1. **Destroy Resources:**
 

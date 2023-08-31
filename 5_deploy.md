@@ -1,7 +1,6 @@
 ## Section 4: Deploy the Resources
 
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -16,8 +15,9 @@
 
 </details>
 
+<br>
 
-With the resources defined, it's time to deploy them:
+***With the resources defined, it's time to deploy them:***
 
 1. **Save and Deploy:** 
 

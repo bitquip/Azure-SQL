@@ -1,6 +1,5 @@
 # Azure SQL Database with Pulumi
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -14,6 +13,8 @@
 - [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion)
 
 </details>
+
+
 
 
 ## Introduction

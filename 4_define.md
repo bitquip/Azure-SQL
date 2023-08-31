@@ -1,7 +1,6 @@
 ## Section 3: Define Azure SQL Database Resources
 
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -16,6 +15,7 @@
 
 </details>
 
+<br>
 
 In this section, we'll define the resources needed to create an Azure SQL Database and its dependencies using Pulumi and TypeScript.
 

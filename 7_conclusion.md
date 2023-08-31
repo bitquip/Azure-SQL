@@ -1,10 +1,9 @@
 ## Conclusion
 
 
-### Table of Contents
-
 <details markdown="block">
    <summary>Table of Contents</summary>
+
 
 - [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
 - [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
@@ -16,6 +15,9 @@
 
 </details>
 
+<br>
+
+![](https://i.kym-cdn.com/entries/icons/original/000/039/563/8675309.jpg)
 
 ***Congratulations!*** 
 

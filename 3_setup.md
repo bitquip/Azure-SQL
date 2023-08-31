@@ -1,7 +1,6 @@
 ## Section 2: Set Up Pulumi Project
 
 
-### Table of Contents
 
 <details markdown="block">
    <summary>Table of Contents</summary>
@@ -16,6 +15,7 @@
 
 </details>
 
+<br>
 
 Now, let's get your Pulumi project up and running:
 
