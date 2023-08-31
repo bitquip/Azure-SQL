@@ -17,7 +17,7 @@
 
 <br>
 
-![](https://i.kym-cdn.com/entries/icons/original/000/039/563/8675309.jpg)
+![Farnsworth](https://i.kym-cdn.com/entries/icons/original/000/039/563/8675309.jpg)
 
 ***Congratulations!*** 
 
