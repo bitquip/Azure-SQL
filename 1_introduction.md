@@ -16,7 +16,9 @@
 
 <br>
 
-![Lord Nibbler](https://static.wikia.nocookie.net/simpsons/images/f/f5/250px-Nibbler.png/revision/latest/thumbnail/width/360/height/360?cb=20210506175741)
+![Lord Nibbler](https://static.wikia.nocookie.net/simpsons/images/f/f5/250px-Nibbler.png/)
+
+
 
 ## Introduction
 
