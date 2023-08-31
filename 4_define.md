@@ -48,7 +48,7 @@ const tags = {
 
 | Tag          | Description                                      |
 |--------------|--------------------------------------------------|
-| env          | The environment in which the resource is being created. This is typically one of the following values: sandbox, dev, qa, prod. |
+| env          | The environment in which the resource is being created. This is typically one of the following values: <br> **sandbox, dev, sandbox01, dev01, nonprod, preprod, prod, prod01**. |
 | app          | The name of the application the resource is being created for. This is typically a string. |
 | servicetier  | The service tier of the resource. This is typically one of the following values: t1, t2, t3, t4. |
 | owneremail   | The email address of the resource owner. This is typically a string. |

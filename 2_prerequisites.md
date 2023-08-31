@@ -3,6 +3,9 @@
 
 ### Table of Contents
 
+<details markdown="block">
+   <summary>Table of Contents</summary>
+
 - [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
 - [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
 - [Setup](https://bitquip.github.io/Azure-SQL/3_setup)
@@ -11,6 +14,7 @@
 - [Cleanup](https://bitquip.github.io/Azure-SQL/6_cleanup)
 - [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion)
 
+</details>
 
 **Before you start, there are a few things you need to have in place:**
 
