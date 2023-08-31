@@ -3,6 +3,9 @@
 
 ### Table of Contents
 
+<details markdown="block">
+   <summary>Table of Contents</summary>
+
 - [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
 - [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
 - [Setup](https://bitquip.github.io/Azure-SQL/3_setup)
@@ -10,6 +13,8 @@
 - [Deploy](https://bitquip.github.io/Azure-SQL/5_deploy)
 - [Cleanup](https://bitquip.github.io/Azure-SQL/6_cleanup)
 - [Conclusion](https://bitquip.github.io/Azure-SQL/7_conclusion)
+
+</details>
 
 
 With the resources defined, it's time to deploy them:
