@@ -1,7 +1,7 @@
 ## Section 3: Define Azure SQL Database Resources
 
 
-# Table of Contents
+### Table of Contents
 
 - [Introduction](https://bitquip.github.io/Azure-SQL/1_introduction)
 - [Prerequisites](https://bitquip.github.io/Azure-SQL/2_prerequisites)
